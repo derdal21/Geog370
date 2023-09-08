@@ -1,0 +1,3029 @@
+<?xml version="1.0" encoding="UTF-8"?><metadata>
+    <idinfo>
+        <citation>
+            <citeinfo>
+                <title>Street Centerlines</title>
+                <geoform>vector digital data</geoform>
+            </citeinfo>
+        </citation>
+        <descript>
+            <abstract>This map layer shows street centerlines in central Ohio. Specifically, this layer covers Franklin County and a seven-mile radius beyond. This layer was created by the Mid-Ohio Regional Planning Commission (MORPC) as part of the Location Based Response System (LBRS) initiative of the Ohio Geographically Referenced Information Program (OGRIP). This layer is cooperatively maintained by various entities in the region including MORPC, Columbus, Dublin, Worthington, Westerville, Gahanna, Grove City, Hilliard, and Franklin County.</abstract>
+            <purpose>This map layer shows street centerlines in central Ohio.</purpose>
+        </descript>
+        <status>
+            <update>Daily</update>
+        </status>
+        <spdom>
+            <bounding>
+                <westbc>-83.457646</westbc>
+                <eastbc>-82.495322</eastbc>
+                <northbc>40.323172</northbc>
+                <southbc>39.674338</southbc>
+            </bounding>
+        </spdom>
+        <keywords>
+            <theme>
+                <themekt>None</themekt>
+                <themekey>Ohio</themekey>
+                <themekey>City</themekey>
+                <themekey>Columbus</themekey>
+                <themekey>Public Service</themekey>
+                <themekey>Transportation</themekey>
+                <themekey>Streets</themekey>
+                <themekey>LBRS</themekey>
+            </theme>
+        </keywords>
+        <accconst>None</accconst>
+        <useconst>This data is dedicated to the public domain under the Creative Commons Universal License (CC0).</useconst>
+        <ptcontac>
+            <cntinfo>
+                <cntorgp>
+                    <cntorg>City of Columbus Department of Technology</cntorg>
+                    <cntper>GIS Division</cntper>
+                </cntorgp>
+                <cntemail>ColumbusGIS@columbus.gov</cntemail>
+            </cntinfo>
+        </ptcontac>
+        <datacred>Mid-Ohio Regional Planning Commission, City of Columbus, Franklin County, City of Dublin, City of Worthington, City of Westerville, City of Gahanna, Grove City, City of Hilliard</datacred>
+        <native>Microsoft Windows 7 Version 6.1 (Build 7601) Service Pack 1; Esri ArcGIS 10.3.1.4959</native>
+    </idinfo>
+    <spdoinfo>
+        <direct>Vector</direct>
+        <ptvctinf>
+            <sdtsterm>
+                <sdtstype>String</sdtstype>
+                <ptvctcnt>88791</ptvctcnt>
+            </sdtsterm>
+        </ptvctinf>
+    </spdoinfo>
+    <eainfo>
+        <detailed>
+            <enttyp>
+                <enttypl>LBRS.LBRScenterlines_Fra</enttypl>
+            </enttyp>
+            <attr>
+                <attrlabl>OBJECTID</attrlabl>
+                <attrdef>Internal feature number.</attrdef>
+                <attrdefs>Esri</attrdefs>
+                <attrdomv>
+                    					
+                    <udom>Sequential unique whole numbers that are automatically generated.</udom>
+                    				
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>SHAPE</attrlabl>
+                <attrdef>Feature geometry.</attrdef>
+                <attrdefs>Esri</attrdefs>
+                <attrdomv>
+                    					
+                    <udom>Coordinates defining the features.</udom>
+                    				
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>SEG_ID</attrlabl>
+                <attrdef>Unique segment ID within a county</attrdef>
+            </attr>
+            <attr>
+                <attrlabl>SEG_UNIQ</attrlabl>
+                <attrdef>A unique identifier across counties</attrdef>
+            </attr>
+            <attr>
+                <attrlabl>STR_PRE</attrlabl>
+                <attrdef>Primary street prefix</attrdef>
+            </attr>
+            <attr>
+                <attrlabl>STR_NAME</attrlabl>
+                <attrdef>Primary street prefix</attrdef>
+                <attrdefs>USPS Pub 28</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>STR_TYPE</attrlabl>
+                <attrdef>The primary street type. Example: ALY, AVE, BLVD, DR, LN, PKWY, RD, PL, ST, CIR</attrdef>
+                <attrdefs>USPS Pub 28</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>STR_SUFFIX</attrlabl>
+                <attrdef>The primary street directional suffix. Example: N, S, E, W, NW, NE, SW, SE</attrdef>
+                <attrdefs>USPS Pub 28</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>L_ADD_FROM</attrlabl>
+                <attrdef>Potential address range left side at the segment's start node</attrdef>
+                <attrdefs>USPS Pub 28</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>L_ADD_TO</attrlabl>
+                <attrdef>Potential address range left side at the segment's end node</attrdef>
+                <attrdefs>USPS Pub 28</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>R_ADD_FROM</attrlabl>
+                <attrdef>Potential address range right side at the segment's start node</attrdef>
+                <attrdefs>USPS Pub 28</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>R_ADD_TO</attrlabl>
+                <attrdef>Potential address range right side at the segment's end node</attrdef>
+                <attrdefs>USPS Pub 28</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>L_TWP</attrlabl>
+                <attrdef>The Township name on the left side of the street segment</attrdef>
+                <attrdefs>ODOT, FIPS</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>R_TWP</attrlabl>
+                <attrdef>The township name on the right side of the street segment</attrdef>
+                <attrdefs>ODOT, FIPS</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>L_CITY</attrlabl>
+                <attrdef>The municipality name on the left side of the street segment</attrdef>
+                <attrdefs>OSOS</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>R_CITY</attrlabl>
+                <attrdef>The municipality name on the right side of the street segment</attrdef>
+                <attrdefs>OSOS</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>L_COUNTY</attrlabl>
+                <attrdef>The 3 character county code on the left side of the street segment</attrdef>
+                <attrdefs>ODOT</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>R_COUNTY</attrlabl>
+                <attrdef>The 3 character county code on the right side of the street segment</attrdef>
+                <attrdefs>ODOT</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>L_STATE</attrlabl>
+                <attrdef>The state name abbreviation on the left side of the street segment. Example: OH, MI, IN</attrdef>
+                <attrdefs>USPS Pub 28</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>R_STATE</attrlabl>
+                <attrdef>The state name abbreviation on the right side of the street segment. Example: OH, MI, IN</attrdef>
+                <attrdefs>USPS Pub 28</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>L_ZIP</attrlabl>
+                <attrdef>The ZIP Code on the left side of the street segment</attrdef>
+                <attrdefs>USPS Pub 28</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>R_ZIP</attrlabl>
+                <attrdef>The ZIP Code on the right side of the street segment</attrdef>
+                <attrdefs>USPS Pub 28</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>L_FIPS</attrlabl>
+                <attrdef>Left side FIPS code (County, Municipal or Township)</attrdef>
+                <attrdefs>ODOT</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>R_FIPS</attrlabl>
+                <attrdef>Right side FIPS code (County, Municipal or Township)</attrdef>
+                <attrdefs>ODOT</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>JURISDIC</attrlabl>
+                <attrdef>ODOT jurisdictional code.  This is an ODOT code and does not indicate ownership or maintainance.</attrdef>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>X</edomv>
+                        						
+                        <edomvd>COTA</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>S</edomv>
+                        						
+                        <edomvd>State</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>C</edomv>
+                        						
+                        <edomvd>County</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>D</edomv>
+                        						
+                        <edomvd>Dedicated</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>M</edomv>
+                        						
+                        <edomvd>Municipal</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>P</edomv>
+                        						
+                        <edomvd>Private</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>T</edomv>
+                        						
+                        <edomvd>Township</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>COUNTY</attrlabl>
+                <attrdef>County in which the segment is located</attrdef>
+            </attr>
+            <attr>
+                <attrlabl>RTE_CD</attrlabl>
+                <attrdef>ODOT route code. This is an ODOT code and does not indicate ownership or maintainance.</attrdef>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>IR</edomv>
+                        						
+                        <edomvd>Interstate</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>US</edomv>
+                        						
+                        <edomvd>US Route</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>BK</edomv>
+                        						
+                        <edomvd>Bikeway</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>CN</edomv>
+                        						
+                        <edomvd>Connector</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>CP</edomv>
+                        						
+                        <edomvd>COTA Path</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>SR</edomv>
+                        						
+                        <edomvd>State Route</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>CR</edomv>
+                        						
+                        <edomvd>County Road</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>TR</edomv>
+                        						
+                        <edomvd>Township Road</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>MR</edomv>
+                        						
+                        <edomvd>Municipal Street</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>RA</edomv>
+                        						
+                        <edomvd>Ramp</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>PR</edomv>
+                        						
+                        <edomvd>Private Street</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>NR</edomv>
+                        						
+                        <edomvd>Natural Resources Road</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>RD_NUM</attrlabl>
+                <attrdef>ODOT road number</attrdef>
+            </attr>
+            <attr>
+                <attrlabl>RTE_EXT</attrlabl>
+                <attrdef>ODOT route extension</attrdef>
+                <attrdefs>ODOT</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>RTE_DESC</attrlabl>
+                <attrdef>ODOT route description</attrdef>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>P</edomv>
+                        						
+                        <edomvd>Proposed</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>A</edomv>
+                        						
+                        <edomvd>Alternate</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>B</edomv>
+                        						
+                        <edomvd>Bypass</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>*</edomv>
+                        						
+                        <edomvd>*</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>CARDINAL</attrlabl>
+                <attrdef>Indicated as C for cardinal N for non-cardinal</attrdef>
+                <attrdefs>ODOT</attrdefs>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>N</edomv>
+                        						
+                        <edomvd>Non-Cardinal</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>C</edomv>
+                        						
+                        <edomvd>Cardinal</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>NLFID</attrlabl>
+                <attrdef>Calculated Network Linear Feature Identifier. This value uniquely identifies a route within a county. It is a 14-character field based on a composition of jurisdiction, county, route system, route number, route number extension, route description, and cardinal direction.</attrdef>
+                <attrdefs>ODOT</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>BEG_LOG</attrlabl>
+                <attrdef>3D Traversed distance from beginning point of route in miles</attrdef>
+                <attrdefs>ODOT</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>END_LOG</attrlabl>
+                <attrdef>3D Traversed distance of route from BEG_LOG in miles</attrdef>
+                <attrdefs>ODOT</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>LENGTH3D</attrlabl>
+                <attrdef>3D Traversed distance of segment BEG_LOG to END_LOG in miles</attrdef>
+                <attrdefs>ODOT</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>LENGTH</attrlabl>
+                <attrdef>Length of the segment in feet</attrdef>
+            </attr>
+            <attr>
+                <attrlabl>STYPE</attrlabl>
+                <attrdef>Surface Type, P=Paved, U=Unpaved</attrdef>
+                <attrdefs>ODOT</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>DIR_TRAV</attrlabl>
+                <attrdef>Direction of roadway</attrdef>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>F</edomv>
+                        						
+                        <edomvd>One Way Cardinal</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>B</edomv>
+                        						
+                        <edomvd>Bidirectional</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>T</edomv>
+                        						
+                        <edomvd>One Way Non-Cardinal</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>REV_DIR</attrlabl>
+                <attrdef>A value of TRUE indicates direction of ascending log points does not follow direction of geometry</attrdef>
+                <attrdefs>ODOT</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>DIV</attrlabl>
+                <attrdef>Divided Road; Y = yes, the section is a dual carriageway or; N = no, the section is a single carriageway only</attrdef>
+            </attr>
+            <attr>
+                <attrlabl>LANES</attrlabl>
+                <attrdef>The number of travel lanes across the street segment</attrdef>
+            </attr>
+            <attr>
+                <attrlabl>SPEED</attrlabl>
+                <attrdef>The posted speed limit</attrdef>
+            </attr>
+            <attr>
+                <attrlabl>ONEWAY</attrlabl>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>EB</edomv>
+                        						
+                        <edomvd>Eastbound</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>CC</edomv>
+                        						
+                        <edomvd>Circle</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>RA</edomv>
+                        						
+                        <edomvd>Ramp</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>SB</edomv>
+                        						
+                        <edomvd>Southbound</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>NB</edomv>
+                        						
+                        <edomvd>Northbound</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>WB</edomv>
+                        						
+                        <edomvd>Westbound</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>CFCC</attrlabl>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>A75</edomv>
+                        						
+                        <edomvd>Road, parking area</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>A74</edomv>
+                        						
+                        <edomvd>Driveway, usually privately owned and unnamed</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>A79</edomv>
+                        						
+                        <edomvd>Unimproved Right of Way (Paper Street)</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>A11</edomv>
+                        						
+                        <edomvd>Primary road with limited access or interstate hwy, unseparated</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>A15</edomv>
+                        						
+                        <edomvd>Primary road with limited access or interstate hwy, separated</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>A20</edomv>
+                        						
+                        <edomvd>Primary Highways without limited access, major category</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>A21</edomv>
+                        						
+                        <edomvd>Primary Highways without limited access, unseparated</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>A25</edomv>
+                        						
+                        <edomvd>Primary Highways without limited access, separated</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>A30</edomv>
+                        						
+                        <edomvd>Secondary state and county highway, major category</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>A31</edomv>
+                        						
+                        <edomvd>Secondary state and county highway, unseparated</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>A35</edomv>
+                        						
+                        <edomvd>Secondary state and county highway, separated</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>A40</edomv>
+                        						
+                        <edomvd>Local, neighborhood, rural road, city street, major category</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>A41</edomv>
+                        						
+                        <edomvd>Local, neighborhood, rural road, city street, unseparated</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>A42</edomv>
+                        						
+                        <edomvd>Local, neighborhood, rural road, city street, unseparated in tunnel</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>A45</edomv>
+                        						
+                        <edomvd>Local, neighborhood, rural road, city street, separated</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>A50</edomv>
+                        						
+                        <edomvd>Vehicular (4WD) Trail, major category</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>A60</edomv>
+                        						
+                        <edomvd>At-grade ramp or connecting road not associated with a limited access highway</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>A61</edomv>
+                        						
+                        <edomvd>Cul-de-Sac, the closed end of a road that forms a loop or turn around</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>A62</edomv>
+                        						
+                        <edomvd>Traffic Circle, the portion of a road or intersection of roads forming a roundabout</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>A63</edomv>
+                        						
+                        <edomvd>Access Ramp, the portion of a road that forms a cloverleaf or limited access interchange</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>A64</edomv>
+                        						
+                        <edomvd>Service Road, provides access to businesses and rest areas</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>A70</edomv>
+                        						
+                        <edomvd>Other Thoroughfare major category</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>A71</edomv>
+                        						
+                        <edomvd>Walkway, for pedestrians, usually unnamed</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>A73</edomv>
+                        						
+                        <edomvd>Alley, road for service vehicles, located at the rear of buildings</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>A99</edomv>
+                        						
+                        <edomvd>COTA path</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>FCLASS</attrlabl>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>2</edomv>
+                        						
+                        <edomvd>Other Freeways and Expressways</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>4</edomv>
+                        						
+                        <edomvd>Minor Arterial</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>5</edomv>
+                        						
+                        <edomvd>Major Collector</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>6</edomv>
+                        						
+                        <edomvd>Minor Collector</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>90</edomv>
+                        						
+                        <edomvd>Other</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>1</edomv>
+                        						
+                        <edomvd>Interstate Highway</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>3</edomv>
+                        						
+                        <edomvd>Principal Arterial</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>63</edomv>
+                        						
+                        <edomvd>Ramp</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>99</edomv>
+                        						
+                        <edomvd>COTA Ramp</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>7</edomv>
+                        						
+                        <edomvd>Local</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>FIPS_COUNTYCODE</attrlabl>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>1</edomv>
+                        						
+                        <edomvd>001 - ADM - Adams</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>3</edomv>
+                        						
+                        <edomvd>003 - ALL - Allen</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>5</edomv>
+                        						
+                        <edomvd>005 - ASD - Ashland</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>7</edomv>
+                        						
+                        <edomvd>007 - ATB - Ashtabula</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>9</edomv>
+                        						
+                        <edomvd>009 - ATH - Athens</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>11</edomv>
+                        						
+                        <edomvd>011 - AUG - Auglaize</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>13</edomv>
+                        						
+                        <edomvd>013 - BEL - Belmont</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>15</edomv>
+                        						
+                        <edomvd>015 - BRO - Brown</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>17</edomv>
+                        						
+                        <edomvd>017 - BUT - Butler</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>19</edomv>
+                        						
+                        <edomvd>019 - CAR - Carroll</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>21</edomv>
+                        						
+                        <edomvd>021 - CHP - Champaign</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>23</edomv>
+                        						
+                        <edomvd>023 - CLA - Clark</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>25</edomv>
+                        						
+                        <edomvd>025 - CLE - Clermont</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>27</edomv>
+                        						
+                        <edomvd>027 - CLI - Clinton</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>29</edomv>
+                        						
+                        <edomvd>029 - COL - Columbiana</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>31</edomv>
+                        						
+                        <edomvd>031 - COS - Coshocton</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>33</edomv>
+                        						
+                        <edomvd>033 - CRA - Crawford</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>35</edomv>
+                        						
+                        <edomvd>035 - CUY - Cuyahoga</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>37</edomv>
+                        						
+                        <edomvd>037 - DAR - Darke</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>39</edomv>
+                        						
+                        <edomvd>039 - DEF - Defiance</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>41</edomv>
+                        						
+                        <edomvd>041 - DEL - Delaware</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>43</edomv>
+                        						
+                        <edomvd>043 - ERI - Erie</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>45</edomv>
+                        						
+                        <edomvd>045 - FAI - Fairfield</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>47</edomv>
+                        						
+                        <edomvd>047 - FAY - Fayette</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>49</edomv>
+                        						
+                        <edomvd>049 - FRA - Franklin</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>51</edomv>
+                        						
+                        <edomvd>051 - FUL - Fulton</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>53</edomv>
+                        						
+                        <edomvd>053 - GAL - Gallia</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>55</edomv>
+                        						
+                        <edomvd>055 - GEA - Geauga</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>57</edomv>
+                        						
+                        <edomvd>057 - GRE - Greene</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>59</edomv>
+                        						
+                        <edomvd>059 - GUE - Guernsey</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>61</edomv>
+                        						
+                        <edomvd>061 - HAM - Hamilton</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>63</edomv>
+                        						
+                        <edomvd>063 - HAN - Hancock</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>65</edomv>
+                        						
+                        <edomvd>065 - HAR - Hardin</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>67</edomv>
+                        						
+                        <edomvd>067 - HAS - Harrison</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>69</edomv>
+                        						
+                        <edomvd>069 - HEN - Henry</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>71</edomv>
+                        						
+                        <edomvd>071 - HIG - Highland</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>73</edomv>
+                        						
+                        <edomvd>073 - HOC - Hocking</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>75</edomv>
+                        						
+                        <edomvd>075 - HOL - Holmes</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>77</edomv>
+                        						
+                        <edomvd>077 - HUR - Huron</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>79</edomv>
+                        						
+                        <edomvd>079 - JAC - Jackson</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>81</edomv>
+                        						
+                        <edomvd>081 - JEF - Jefferson</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>83</edomv>
+                        						
+                        <edomvd>083 - KNO - Knox</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>85</edomv>
+                        						
+                        <edomvd>085 - LAK - Lake</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>87</edomv>
+                        						
+                        <edomvd>087 - LAW - Lawrence</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>89</edomv>
+                        						
+                        <edomvd>089 - LIC - Licking</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>91</edomv>
+                        						
+                        <edomvd>091 - LOG - Logan</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>93</edomv>
+                        						
+                        <edomvd>093 - LOR - Lorain</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>95</edomv>
+                        						
+                        <edomvd>095 - LUC - Lucas</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>97</edomv>
+                        						
+                        <edomvd>097 - MAD - Madison</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>99</edomv>
+                        						
+                        <edomvd>099 - MAH - Mahoning</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>101</edomv>
+                        						
+                        <edomvd>101 - MAR - Marion</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>103</edomv>
+                        						
+                        <edomvd>103 - MED - Medina</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>105</edomv>
+                        						
+                        <edomvd>105 - MEG - Meigs</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>107</edomv>
+                        						
+                        <edomvd>107 - MER - Mercer</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>109</edomv>
+                        						
+                        <edomvd>109 - MIA - Miami</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>111</edomv>
+                        						
+                        <edomvd>111 - MOE - Monroe</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>113</edomv>
+                        						
+                        <edomvd>113 - MOT - Montgomery</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>115</edomv>
+                        						
+                        <edomvd>115 - MRG - Morgan</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>117</edomv>
+                        						
+                        <edomvd>117 - MRW - Morrow</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>119</edomv>
+                        						
+                        <edomvd>119 - MUS - Muskingum</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>121</edomv>
+                        						
+                        <edomvd>121 - NOB - Noble</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>123</edomv>
+                        						
+                        <edomvd>123 - OTT - Ottawa</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>125</edomv>
+                        						
+                        <edomvd>125 - PAU - Paulding</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>127</edomv>
+                        						
+                        <edomvd>127 - PER - Perry</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>129</edomv>
+                        						
+                        <edomvd>129 - PIC - Pickaway</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>131</edomv>
+                        						
+                        <edomvd>131 - PIK - Pike</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>133</edomv>
+                        						
+                        <edomvd>133 - POR - Portage</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>135</edomv>
+                        						
+                        <edomvd>135 - PRE - Preble</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>137</edomv>
+                        						
+                        <edomvd>137 - PUT - Putnam</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>139</edomv>
+                        						
+                        <edomvd>139 - RIC - Richland</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>141</edomv>
+                        						
+                        <edomvd>141 - ROS - Ross</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>143</edomv>
+                        						
+                        <edomvd>143 - SAN - Sandusky</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>145</edomv>
+                        						
+                        <edomvd>145 - SCI - Scioto</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>147</edomv>
+                        						
+                        <edomvd>147 - SEN - Seneca</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>149</edomv>
+                        						
+                        <edomvd>149 - SHE - Shelby</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>151</edomv>
+                        						
+                        <edomvd>151 - STA - Stark</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>153</edomv>
+                        						
+                        <edomvd>153 - SUM - Summit</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>155</edomv>
+                        						
+                        <edomvd>155 - TRU - Trumbull</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>157</edomv>
+                        						
+                        <edomvd>157 - TUS - Tuscarawas</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>159</edomv>
+                        						
+                        <edomvd>159 - UNI - Union</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>161</edomv>
+                        						
+                        <edomvd>161 - VAN - Van Wert</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>163</edomv>
+                        						
+                        <edomvd>163 - VIN - Vinton</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>165</edomv>
+                        						
+                        <edomvd>165 - WAR - Warren</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>167</edomv>
+                        						
+                        <edomvd>167 - WAS - Washington</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>169</edomv>
+                        						
+                        <edomvd>169 - WAY - Wayne</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>171</edomv>
+                        						
+                        <edomvd>171 - WIL - Williams</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>173</edomv>
+                        						
+                        <edomvd>173 - WOO - Wood</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>175</edomv>
+                        						
+                        <edomvd>175 - WYA - Wyandot</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>LSN</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>SHIELD</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>LABEL</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>COMBAT_ID</attrlabl>
+                <attrdef>Segement ID used by the COMBAT system.</attrdef>
+            </attr>
+            <attr>
+                <attrlabl>COLS_ID</attrlabl>
+                <attrdef>Segment ID used internally by the City of Columbus</attrdef>
+            </attr>
+            <attr>
+                <attrlabl>LOCAL_ID</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>ASN_1</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>ASN_2</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>ASN_3</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>ASN_4</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>ORIGIN</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>LF_ADDR_ACTUAL</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>LT_ADDR_ACTUAL</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>RF_ADDR_ACTUAL</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>RT_ADDR_ACTUAL</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>GIS_MAINT_AUTH</attrlabl>
+                <attrdef>Entity responsible for maintaining the segment in the GIS database</attrdef>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>1</edomv>
+                        						
+                        <edomvd>Columbus</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>2</edomv>
+                        						
+                        <edomvd>Dublin</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>3</edomv>
+                        						
+                        <edomvd>Gahanna</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>4</edomv>
+                        						
+                        <edomvd>Westerville</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>5</edomv>
+                        						
+                        <edomvd>FCEO/FCA</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>6</edomv>
+                        						
+                        <edomvd>Delaware County LBRS</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>7</edomv>
+                        						
+                        <edomvd>Fairfield County LBRS</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>8</edomv>
+                        						
+                        <edomvd>Licking County LBRS</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>9</edomv>
+                        						
+                        <edomvd>Madison County LBRS</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>10</edomv>
+                        						
+                        <edomvd>Pickaway County LBRS</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>11</edomv>
+                        						
+                        <edomvd>Union County Ohio</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>12</edomv>
+                        						
+                        <edomvd>Grove City</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>13</edomv>
+                        						
+                        <edomvd>Worthington</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>14</edomv>
+                        						
+                        <edomvd>Hilliard</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>LAST_EDIT_DATE</attrlabl>
+                <attrdef>The date of the most recent edit/update to the segment in the database</attrdef>
+            </attr>
+            <attr>
+                <attrlabl>EDITOR</attrlabl>
+                <attrdef>Entity to last update the segment in the GIS database</attrdef>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>COC</edomv>
+                        						
+                        <edomvd>City of Columbus</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>DUB</edomv>
+                        						
+                        <edomvd>City of Dublin</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>FCA</edomv>
+                        						
+                        <edomvd>Franklin County Auditor</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>FCEO</edomv>
+                        						
+                        <edomvd>Franklin County Engineer</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>GAH</edomv>
+                        						
+                        <edomvd>City of Gahanna</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>GRO</edomv>
+                        						
+                        <edomvd>Grove City</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>MECC</edomv>
+                        						
+                        <edomvd>MECC</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>MORP</edomv>
+                        						
+                        <edomvd>Mid-Ohio Regional Planning Commission</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>WEST</edomv>
+                        						
+                        <edomvd>City of Westerville</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>WOR</edomv>
+                        						
+                        <edomvd>Worthington</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>L_COMM</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>R_COMM</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>SIDEWALK</attrlabl>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>B</edomv>
+                        						
+                        <edomvd>Both</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>L</edomv>
+                        						
+                        <edomvd>Left</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>N</edomv>
+                        						
+                        <edomvd>None</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>R</edomv>
+                        						
+                        <edomvd>Right</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>BIKEWAY</attrlabl>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>BB</edomv>
+                        						
+                        <edomvd>Bike Blvd</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>L</edomv>
+                        						
+                        <edomvd>Lane</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>P</edomv>
+                        						
+                        <edomvd>Path Off-Road</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>PS</edomv>
+                        						
+                        <edomvd>Paved Shoulder</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>RT</edomv>
+                        						
+                        <edomvd>Signed Route</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>SH</edomv>
+                        						
+                        <edomvd>Sharrow</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>WC</edomv>
+                        						
+                        <edomvd>Wide Curb</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>SYMBOLOGY</attrlabl>
+                <attrdef>Categories for use in map display</attrdef>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>1</edomv>
+                        						
+                        <edomvd>Interstate</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>2</edomv>
+                        						
+                        <edomvd>U.S. Route</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>3</edomv>
+                        						
+                        <edomvd>State Route</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>4</edomv>
+                        						
+                        <edomvd>Ramp</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>5</edomv>
+                        						
+                        <edomvd>Major Road</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>6</edomv>
+                        						
+                        <edomvd>Minor Road</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>7</edomv>
+                        						
+                        <edomvd>Other</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>SNOW_REMOVAL_PRIORITY</attrlabl>
+                <attrdef>Priority of the street segment for snow/ice treatment (Priority 1, 2, or 3)</attrdef>
+            </attr>
+            <attr>
+                <attrlabl>TRFC_INVESTIGATOR_ZONE</attrlabl>
+                <attrdef>Identifies the traffic investigator responsible for the segment (NORTHEAST, NORTHWEST, SOUTHEAST, SOUTHWEST)</attrdef>
+            </attr>
+            <attr>
+                <attrlabl>SNOW_REMOVAL_RESP</attrlabl>
+                <attrdef>Code describing the symbology used to display the snow removal responsibility for the segment</attrdef>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>1</edomv>
+                        						
+                        <edomvd>Solid Yellow</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>2</edomv>
+                        						
+                        <edomvd>Dotted Yellow</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>3</edomv>
+                        						
+                        <edomvd>Solid Green</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>4</edomv>
+                        						
+                        <edomvd>Dotted Green</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>5</edomv>
+                        						
+                        <edomvd>Pink</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>6</edomv>
+                        						
+                        <edomvd>Blue</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>7</edomv>
+                        						
+                        <edomvd>Roadway Accepted</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>8</edomv>
+                        						
+                        <edomvd>Roadway Not Accepted Yet</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>9</edomv>
+                        						
+                        <edomvd>Clear</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>10</edomv>
+                        						
+                        <edomvd>Clear</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>11</edomv>
+                        						
+                        <edomvd>Solid Yellow</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>12</edomv>
+                        						
+                        <edomvd>Pink</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>13</edomv>
+                        						
+                        <edomvd>Blue</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>SNOW_REMOVAL_RESP_DESC</attrlabl>
+                <attrdef>Description for the snow removal responsibility for the segment</attrdef>
+            </attr>
+            <attr>
+                <attrlabl>STREET_MAINT_OUTPOST_NAME</attrlabl>
+                <attrdef>Department of Public Service maintenance outpost responsible for the segment (Roberts Road, 25th Ave, Marion, Central, or North)</attrdef>
+            </attr>
+            <attr>
+                <attrlabl>STREET_MAINT_ZONE</attrlabl>
+                <attrdef>Department of Public Service street maintenance zone</attrdef>
+            </attr>
+            <attr>
+                <attrlabl>SNOW_MAINT_AGREEMENT</attrlabl>
+                <attrdef>Describes the entity responsible for snow/ice treatment based on agreements between various jurisdictions</attrdef>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>CBUS</edomv>
+                        						
+                        <edomvd>Columbus</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>CBUS4FRCO</edomv>
+                        						
+                        <edomvd>Columbus for Franklin County</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>CBUS4FRTWP</edomv>
+                        						
+                        <edomvd>Columbus for Franklin Township</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>CBUS4MADTWP</edomv>
+                        						
+                        <edomvd>Columbus for Madison Township</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>CBUS4ODOT</edomv>
+                        						
+                        <edomvd>Columbus for ODOT</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>CBUS4OTHR</edomv>
+                        						
+                        <edomvd>Columbus for Other</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>CBUSNOTR</edomv>
+                        						
+                        <edomvd>Columbus, No Treatment</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>CLTWP4CBUS</edomv>
+                        						
+                        <edomvd>Clinton Township for Columbus</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>EA4CBUS</edomv>
+                        						
+                        <edomvd>Easton Association for Columbus</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>FRCO4CBUS</edomv>
+                        						
+                        <edomvd>Franklin County for Columbus</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>FRTWP4CBUS</edomv>
+                        						
+                        <edomvd>Franklin Township for Columbus</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>GAH4CBUS</edomv>
+                        						
+                        <edomvd>Gahanna for Columbus</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>HATWP4CBUS</edomv>
+                        						
+                        <edomvd>Hamilton Township for Columbus</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>HIL4CBUS</edomv>
+                        						
+                        <edomvd>Hilliard for Columbus</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>JATWP4CBUS</edomv>
+                        						
+                        <edomvd>Jackson Township for Columbus</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>MADTWP4CBUS</edomv>
+                        						
+                        <edomvd>Madison Township for Columbus</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>NA4CBUS</edomv>
+                        						
+                        <edomvd>New Albany for Columbus</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>NOTCBUS</edomv>
+                        						
+                        <edomvd>Not Columbus</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>ODOT4CBUS</edomv>
+                        						
+                        <edomvd>ODOT for Columbus</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>OTHR4CBUS</edomv>
+                        						
+                        <edomvd>Other for Columbus</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>PETWP4CBUS</edomv>
+                        						
+                        <edomvd>Perry Township for Columbus</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>PRTWP4CBUS</edomv>
+                        						
+                        <edomvd>Prairie Township for Columbus</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>REY4CBUS</edomv>
+                        						
+                        <edomvd>Reynoldsburg for Columbus</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+                <attrdomv>
+                    					
+                    <edom>
+                        						
+                        <edomv>UA4CBUS</edomv>
+                        						
+                        <edomvd>Upper Arlington for Columbus</edomvd>
+                        					
+                    </edom>
+                    				
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>RS_ANTI_ICE</attrlabl>
+                <attrdef>Route identifier snow/ice pre-treatment</attrdef>
+            </attr>
+            <attr>
+                <attrlabl>DISSOLVE_ID</attrlabl>
+                <attrdef>ID used to dissolve short adjacent segments along snow/ice routes to improve display in Warrior Watch, the Columbus snow plow tracking application</attrdef>
+            </attr>
+            <attr>
+                <attrlabl>RS_SNOW</attrlabl>
+                <attrdef>Route identifier snow/ice treatment</attrdef>
+            </attr>
+            <attr>
+                <attrlabl>RS_PROBLEM</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>RS_BRIDGE</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>RS_HOTSPOT</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>RS_EMERGENCY</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>RS_NO_SAND</attrlabl>
+                <attrdef>Identifies segments that cannot be treated for snow/ice with sand due to combined sewer system</attrdef>
+            </attr>
+            <attr>
+                <attrlabl>RS_RUBBER</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>RS_INV</attrlabl>
+            </attr>
+        </detailed>
+    </eainfo>
+    <metainfo>
+        <metd>20170503</metd>
+        <metc>
+            <cntinfo>
+                <!--no contact person or organization name available-->
+            </cntinfo>
+        </metc>
+        <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+        <metstdv>FGDC-STD-001-1998</metstdv>
+        <mettc>local time</mettc>
+    </metainfo>
+</metadata>
