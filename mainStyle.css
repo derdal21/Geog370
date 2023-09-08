@@ -1,0 +1,13 @@
+body {
+    background-color: #4B9CD3; 
+    color: #ffffff; 
+    font-family: Georgia, sans-serif; 
+  }
+  
+   
+  .container {
+    max-width: 960px; 
+    margin: 0 auto; 
+    padding: 20px; 
+  }
+  
