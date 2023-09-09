@@ -1,13 +1,49 @@
+/* styles.css */
 body {
-    background-color: #4B9CD3; 
-    color: #ffffff; 
-    font-family: Georgia, sans-serif; 
-  }
-  
-   
-  .container {
-    max-width: 960px; 
-    margin: 0 auto; 
-    padding: 20px; 
-  }
-  
+  background-color: #7BAFD4; /* Carolina Blue background color */
+  color: #ffffff; /* White text color */
+  font-family: Georgia, sans-serif;
+}
+
+header {
+  background-color:  #13294B; /* White background color for the header */
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px; /* Add space between navigation links */
+}
+
+nav a {
+  text-decoration: none;
+  color: #7BAFD4; /* Carolina Blue link color in the navigation bar */
+  padding: 5px 10px; /* Add padding to style the buttons */
+  border: 1px solid #7BAFD4; /* Add a border to style the buttons */
+  border-radius: 5px; /* Add rounded corners to the buttons */
+  transition: background-color 0.3s ease; /* Smooth color transition on hover */
+
+}
+
+nav a:hover {
+  background-color: #7BAFD4; /* Change background color on hover */
+  color: #ffffff; /* Change text color on hover */
+}
+
+footer {
+  background-color: #7BAFD4; /* Carolina Blue background color for the footer */
+  color: #ffffff; /* White text color for the footer */
+  text-align: center;
+  padding: 10px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #ffffff; /* White link color in the footer */
+}
