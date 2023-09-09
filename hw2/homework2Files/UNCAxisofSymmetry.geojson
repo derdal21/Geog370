@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "UNCAxisofSymmetry",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::3857" } },
+"features": [
+{ "type": "Feature", "properties": { "id": 1 }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -8799720.043149633333087, 4288052.766574198380113 ], [ -8800085.388477733358741, 4288838.442703577689826 ] ] ] } }
+]
+}

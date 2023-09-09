@@ -1,0 +1,15 @@
+{
+"type": "FeatureCollection",
+"name": "UNCAxialMonuments",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::3857" } },
+"features": [
+{ "type": "Feature", "properties": { "id": 8 }, "geometry": { "type": "Point", "coordinates": [ -8800009.670411992818117, 4288674.780113046057522 ] } },
+{ "type": "Feature", "properties": { "id": 1 }, "geometry": { "type": "Point", "coordinates": [ -8799943.527816083282232, 4288528.817541882395744 ] } },
+{ "type": "Feature", "properties": { "id": 2 }, "geometry": { "type": "Point", "coordinates": [ -8799993.677310017868876, 4288639.146428536623716 ] } },
+{ "type": "Feature", "properties": { "id": 3 }, "geometry": { "type": "Point", "coordinates": [ -8800005.015456471592188, 4288699.870924452319741 ] } },
+{ "type": "Feature", "properties": { "id": 4 }, "geometry": { "type": "Point", "coordinates": [ -8799858.952050263062119, 4288350.326489259488881 ] } },
+{ "type": "Feature", "properties": { "id": 5 }, "geometry": { "type": "Point", "coordinates": [ -8799904.202611101791263, 4288449.179340466856956 ] } },
+{ "type": "Feature", "properties": { "id": 6 }, "geometry": { "type": "Point", "coordinates": [ -8799791.583978159353137, 4288199.723013733513653 ] } },
+{ "type": "Feature", "properties": { "id": 7 }, "geometry": { "type": "Point", "coordinates": [ -8799719.532272135838866, 4288053.046326474286616 ] } }
+]
+}
