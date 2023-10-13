@@ -24,6 +24,8 @@
       <h1>Homework 6</h1>
     <br>
     <br>
+      <h1>Part 1</h1>
+      <br>
       <h1>Here is my Map</h1>
       <img width="800" src="./hw6final.png">
       <br>
@@ -31,6 +33,53 @@
       <a href="https://github.com/derdal21/Geog370/tree/main/hw6/geojson"><h1>Here is a link to my geoJson file on Github</h1></a>
       <br>
       <br> 
-      <a href="./OhioPovertyCSV/ACSDT1Y2022.B20004-Data.csv"><h1>Here is a link to my CSV File</h1></a>    
+      <a href="./OhioPovertyCSV/ACSDT1Y2022.B20004-Data.csv"><h1>Here is a link to my CSV File</h1></a> 
+      <br>
+      <br> 
+      <h1>Part 2</h1>
+      <br>
+      <p>For the followings maps I aquired data from the Census Bureau on the 
+        number of household receiving snap benefits per county in Ohio. To account for population 
+        diffrences between counties I created a ratio using the total population estimates per 
+        county. By diving the total number of SNAP recipients per county by the total population 
+        estimate per county and mutiplying the total by 100 I was able to get the number of SNAP 
+        recipients.</p>
+      <br>
+      <p>I was hoping to be able to find the total number of households per county because it is not
+        clear how many people are in a household. Additionally the average numbe of people in a household
+        might vary from region to region. For instance, urban areas might have a fewer number of people 
+        living in each household whereas rural areas might have a greater number of people per household.
+        Regardless, creating a ratio for population still accounts for and normalizes by population density.
+
+      </p>
+      <br>
+      <br> 
+      <H1>Jenks Breaks Categorization</H1>
+      <img width="800" src="Part2Maps/JennksBreaks.png">
+      <br> 
+      <p>The 'Jenks Breaks' categorization does a decent job for the most part of splitting categories at natural break points.
+        One of the properties of Jenks Breaks is that certain categories span a large number of values while only containing a
+        few instances. This is beneficial for showing diffrences in magnitude between different instances with large diffrences in
+        values, but makes it difficult to differntiate between instances that have values closer together.
+
+      </p>
+      <br>
+      <br> 
+      <h1>Equal Counts Categorization</h1> 
+      <img width="800" src="./Part2Maps/EqualSizeBreaks.png">
+      <br>
+      <p>The 'Equal Counts' categorization has an equal number of instances in each category. This categorization method
+        takes no regard for whether two values are close or far apart. While this map does utilize the full extent of each 
+        category, it forces some values that are far apart into the same category while splitting apart other ones.
+      <br>
+      <br> 
+      <h1>Pretty Breaks Categorization</h1> 
+      <img width="800" src="./Part2Maps/PrettyBreak.png">
+      <p>The "Pretty Breaks' category is certainly pretty, at least in terms of number. However the breaks being pretty 
+        and at constant intervals means that, again no attention is paid to the concentration of differening instances
+        and thier values. Some categories have many values, some have few if not none at all.
+      </p>
+      <br>
+      <br>
 </body>
 </html>
