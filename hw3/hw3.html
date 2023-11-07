@@ -31,7 +31,7 @@
    </a>
    <p> With the WGS84 projection, we see that similar to the Mercator projection size is increasingly distorted 
     the further an object is from the equater. Unlike the mercator projection however lines of latitude are not spaced further apart
-    closer to the poles, resulting in objects closer to the poles to appear wider, but maaintaining the same hight.
+    closer to the poles, resulting in objects closer to the poles to appear wider, but maintaining the same hight.
    <br>
    <a href="./maps/AitoffProjection.png">
    <h1>Aitoff Projection</h1>
@@ -47,51 +47,79 @@
    <h1>Projections Added by Me</h1>
    <br>
    <br>
-   <a href="./maps/mercatorProjection3857.png">
-   <h1>3857, Mercator Projection</h1>
-   <img width="800" src="./maps/mercatorProjection3857.png">
+   <a href="./newMaps/NewEPSG3857.png">
+   <h1>3857, Pseado Mercator Projection</h1>
+   <img width="800" src="./newMaps/NewEPSG3857.png">
    </a>
+   <p>is similar to the WGS84 projection. The core difference between the two is that while objects 
+    do get larger the further they are from the equator  in the Psedo Mercator Projection
+    proportionality is maintained between hight and width.
+    This means that shape is preserved while area is heavily distored.</p>
    <br>
    <br>
-   <a href="./maps/SphereWinkle53018.png">
+   <a href="./newMaps/NewESRI53018.png">
    <h1>53018, Sphere Winkle Projection</h1>
-   <img width="800" src="./maps/SphereWinkle53018.png">
+   <img width="800" src="./newMaps/NewESRI53018.png">
    </a>
+   <p>The Sphere Winkle projection seeks to provide a more spherical representation by adding curvature to lines of 
+    latitude. In doing so, the Sphere Winkle projection eliminates most but not all of the area issues caused by the 
+  Mercator projection, but in turn causes increasingly distored shapes the further an object is from the prime meridian.</p>
    <br>
    <br>
-   <a href="./maps/WorldCyldricalEqualArea54034.png">
+   <a href="./newMaps/NewESRI54034.png">
    <h1>54034, World Cyldrical Equal Area Projection</h1>
-   <img width="800" src="./maps/WorldCyldricalEqualArea54034.png">
+   <img width="800" src="./newMaps/NewESRI54034.png">
    </a>
+   <P>The World Cyldrical Equal Area Projection, is a cylndrical projection much like the Mercator and WGS84 projections.
+    Unlike the other two projections the World Cyldrical Equal Area Projection seeks to perserve area, as such objects are
+    increasingly streched east-west the further they are from the equator. This results in a map where size is maintained, but 
+    shapes are heavily distored towards the polare regions.
+   </P>
    <br>
    <br>
-   <a href="./maps/EquidistantConic54027.png">
+   <a href="./newMaps/NewESRI54027.png">
    <h1>54027, Equidistant Conic Projection</h1>
-   <img width="800" src="./maps/EquidistantConic54027.png">
+   <img width="800" src="./newMaps/NewESRI54027.png">
    </a>
+   <p>The Equidistant Conic Projection, seeks to project Earth onto a cone where the peak of the cone is the North Pole. This map,
+    is useful for showing great circle distances in the Northern Hemishpere, but casuses great East-West distortion in addition to size 
+    distortion the further objects are from the line of latitude halfway between the North Pole and the Equator.</p>
    <br>
    <br>
-   <a href="./maps/NorthPoleAzimuthal102016.png">
+   <a href="./newMaps/NewESRI102016.png">
    <h1>102016, North Pole Azimuthal Projection</h1>
-   <img width="800" src="./maps/NorthPoleAzimuthal102016.png">
-   </a>
+   <img width="800" src="./newMaps/NewESRI102016.png">
+  </a>
+   <p>The North Pole Azimuthal Projection is similar to the Equadistant Conic Projection. This projection seeks to project Earth onto
+    a flat circle centered on the North Pole rather than a cone centered on the North Pole. Indeed, we can see that the maps shows 
+    continuous lines of latitude and that lines longitude cut straight across the North Pole.
+   </p>
    <br>
    <br>
    <h1>My Chosen Projections</h1>
    <br>
    <br>
-   <a href="./maps/SphereBonne53024.png">
+   <a href="./newMaps/NewESRI 53024.png">
    <h1>53024, Sphere Bonne</h1>
-   <img width="800" src="./maps/SphereBonne53024.png">
+   <img width="800" src="./newMaps/NewESRI 53024.png">
    </a>
+   <p>The Sphere Bonne projection results in an almost 'heart shaped' projection, where the area surrounding the 
+    North Pole simialar to a conic projection, but area around the South Pole wraps up simialar to a spherical projection.
+    This method compensates for some of the shape and size distortions found in the Conic and Azimuthal projections, but still
+    features a great deal of distortion apart from objects directly on the Prime Meridian or Arctic Circle.
+   </p>
    <br>
    <br>
-   <a href="./maps/SphereCraster53046.png">
-   <h1>53046, Sphere Craster Projection</h1>
-   <img width="800" src="./maps/SphereCraster53046.png">
+   <a href="./newMaps/NewESRI54021.png">
+   <h1>54021, World Polyconic Projection</h1>
+   <img width="800" src="./newMaps/NewESRI54021.png">
    </a>
+   <P>The World Polyconic Projection seeks to compensate for the immense size distortions in the Equidistant Conic Projection by
+    providing two peaks for a cone, at both the North and South Poles. This projection excells at showing great circle distances in
+    both hemispheres across the prime meridian, but results in high levels of size distrtion the further an object is from the Prime Meridian
+    or the Polar Regions.
+   </P>
    <br>
    <br>
-   <h1>Data used for this Project</h1>
   </body>
 </html>
